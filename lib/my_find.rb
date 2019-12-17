@@ -2,7 +2,7 @@ require 'pry'
 
 def my_find(collection)
     collection.each do |element|
-    return element if yield(element) == true && new_array.length == 0
+    return element if yield(element)
     end
     new_array.first
 end
