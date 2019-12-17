@@ -5,5 +5,5 @@ def my_find(collection)
     collection.each do |element|
     new_array << element if yield(element) == true && new_array.length == 0
     end
-    new_array
+    new_array.first
 end
